@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>李伊阿果 · Portfolio Mobile</title>
-  <link rel="stylesheet" href="mobile.css" />
+  <link rel="stylesheet" href="mobile.css?v=mobile-card-layout-20260621" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <meta name="theme-color" content="#f5f1ea" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -60,42 +60,50 @@
         <p>点击封面观看视频小片🎬</p>
       </div>
       <div class="m-video-list">
-        <div class="m-video-card" onclick="openVideo('assets/videos/ashima.mp4', '《阿诗玛的花》｜AIGC短片')">
-          <img class="m-video-cover" src="assets/covers/ashima.jpg" alt="《阿诗玛的花》" />
-          <div class="m-play-btn">▶</div>
+        <article class="m-video-card" onclick="openVideo('assets/videos/ashima.mp4', '《阿诗玛的花》｜AIGC短片')">
+          <div class="m-video-media">
+            <img class="m-video-cover" src="assets/covers/ashima.jpg" alt="《阿诗玛的花》" />
+            <div class="m-play-btn">▶</div>
+          </div>
           <div class="m-video-overlay">
             <span class="m-video-type">AIGC SHORT FILM / 01</span>
             <h3>《阿诗玛的花》｜AIGC短片</h3>
             <p>基于纪录片《阿妈的刺绣》延伸创作，以AIGC动画解构撒尼刺绣的几何对称特征。在传统纹样与数字技术的碰撞中，探索非遗文化的当代表达。</p>
           </div>
-        </div>
-        <div class="m-video-card" onclick="openVideo('assets/videos/阿妈的刺绣.mp4', '《阿妈的刺绣》')">
-          <img class="m-video-cover" src="assets/covers/amadecixiu.jpg" alt="《阿妈的刺绣》" />
-          <div class="m-play-btn">▶</div>
+        </article>
+        <article class="m-video-card" onclick="openVideo('assets/videos/阿妈的刺绣.mp4', '《阿妈的刺绣》')">
+          <div class="m-video-media">
+            <img class="m-video-cover" src="assets/covers/amadecixiu.jpg" alt="《阿妈的刺绣》" />
+            <div class="m-play-btn">▶</div>
+          </div>
           <div class="m-video-overlay">
             <span class="m-video-type">DOCUMENTARY / 02</span>
             <h3>《阿妈的刺绣》｜微纪录片</h3>
             <p>以第一人称视角走进撒尼人的生活现场，记录国家级非遗传承人的坚守与传递。当针脚穿过布面，古老的文化也在当代继续生长。</p>
           </div>
-        </div>
-        <div class="m-video-card" onclick="openVideo('assets/videos/狮依玛.mp4', '《狮依玛》')">
-          <img class="m-video-cover" src="assets/covers/shiyima.jpg" alt="《狮依玛》" />
-          <div class="m-play-btn">▶</div>
+        </article>
+        <article class="m-video-card" onclick="openVideo('assets/videos/狮依玛.mp4', '《狮依玛》')">
+          <div class="m-video-media">
+            <img class="m-video-cover" src="assets/covers/shiyima.jpg" alt="《狮依玛》" />
+            <div class="m-play-btn">▶</div>
+          </div>
           <div class="m-video-overlay">
             <span class="m-video-type">DANCE FILM / 03</span>
             <h3>《狮依玛》｜舞蹈影像</h3>
             <p>以舞狮为视觉意象，通过舞蹈影像探讨生命、传承与信仰。在刚劲与热烈的肢体表达中，展现民族文化历久弥新的生命力。</p>
           </div>
-        </div>
-        <div class="m-video-card" onclick="openVideo('assets/videos/兔爷人生.mp4', '《兔爷人生》')">
-          <img class="m-video-cover" src="assets/covers/tuye.jpg" alt="《兔爷人生》" />
-          <div class="m-play-btn">▶</div>
+        </article>
+        <article class="m-video-card" onclick="openVideo('assets/videos/兔爷人生.mp4', '《兔爷人生》')">
+          <div class="m-video-media">
+            <img class="m-video-cover" src="assets/covers/tuye.jpg" alt="《兔爷人生》" />
+            <div class="m-play-btn">▶</div>
+          </div>
           <div class="m-video-overlay">
             <span class="m-video-type">DOCUMENTARY / 04</span>
             <h3>《兔爷人生》｜微纪录片</h3>
-            <p>镜头走进杨梅竹斜街，从一尊兔儿爷的诞生开始，回望传统技艺跨越时光的传承轨迹。以非遗之美回应文化自信的时代命题。</p>
+            <p>镜头走进杨梅竹斜街，从一尊兔儿爷的诞生开始，回望传统技艺跨越时光的传承轨迹。在“十五五”开局之年，以非遗之美回应文化自信的时代命题。</p>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
@@ -128,10 +136,16 @@
           <span id="mBookPage">01/18</span>
         </div>
         <div class="m-book-desc">
-          <p>15cm×15cm｜裸脊平装｜融媒出版</p>
-          <p>🍬 扫描书中二维码即可观看AIGC短片</p>
-          <p>💡 硫酸纸镂空叠印设计，模拟穹顶藻井空间结构</p>
-          <p>🤩 将传统建筑细节转译为可阅读、可观看、可体验的出版物</p>
+          <div class="m-book-specs">
+            <span><small>SIZE</small><b>15 × 15 cm</b></span>
+            <span><small>BINDING</small><b>裸脊平装</b></span>
+            <span><small>FORMAT</small><b>融媒出版</b></span>
+          </div>
+          <div class="m-book-points">
+            <div class="m-book-point"><i>01</i><p><b>影像延伸</b><span>扫描书中二维码，即可观看配套 AIGC 短片。</span></p></div>
+            <div class="m-book-point"><i>02</i><p><b>空间叠印</b><span>以硫酸纸镂空叠印，模拟穹顶藻井由外向内、由浅入深的空间结构。</span></p></div>
+            <div class="m-book-point"><i>03</i><p><b>传统转译</b><span>将建筑细节转译为可阅读、可观看、可体验的当代出版物。</span></p></div>
+          </div>
           <div class="m-tags">
             <b>书籍设计</b><b>内页排版</b><b>天坛</b><b>藻井</b><b>传统纹样</b>
           </div>
@@ -175,11 +189,11 @@
         <h2>项目 DEMO</h2>
       </div>
       <div class="m-demo-intro">
-        <p>《解码中华文化基因》是从2022年开展至今的传统文化IP型项目，以全媒体矩阵开展中华优秀传统文化系列报道。借以AIGC创作系列短视频，并创建「中华文化基因数据库」网页，呈现"内容平台 + AI知识服务系统"的产品结构。</p>
+        <p>《解码中华文化基因》是从2022年开展至今的传统文化IP型项目，以全媒体矩阵开展中华优秀传统文化系列报道。借以AIGC创作系列短视频，并创建「中华文化基因数据库」网页，呈现“内容平台 + AI知识服务系统”的产品结构。</p>
       </div>
       <div class="m-demo-list">
         <div class="m-demo-card">
-          <span class="m-sub-label">WEBSITE DEMO</span>
+          <div class="m-demo-kicker"><span class="m-sub-label">WEBSITE DEMO</span><b>PROJECT 01</b></div>
           <div class="m-demo-shot">
             <img src="assets/demo/culture-home.jpg" alt="解码中华文化基因网站首页" />
           </div>
@@ -189,18 +203,28 @@
             <div class="m-tags">
               <b>文化基因</b><b>融媒体</b><b>数字平台</b>
             </div>
+            <div class="m-project-meta">
+              <span><em>ROLE</em>内容策划 / 平台构想</span>
+              <span><em>OUTPUT</em>网页首页 / 内容入口</span>
+              <span><em>VALUE</em>文化知识可视化</span>
+            </div>
           </div>
         </div>
         <div class="m-demo-card">
-          <span class="m-sub-label">AI ENGINE</span>
+          <div class="m-demo-kicker"><span class="m-sub-label">AI ENGINE</span><b>PROJECT 02</b></div>
           <div class="m-demo-shot">
             <img src="assets/demo/engine-home.jpg" alt="智能引擎首页" />
           </div>
           <div class="m-demo-info">
             <h3>智能引擎</h3>
-            <p>基于 Vibe Coding 工作流搭建文化领域智能知识库，汇聚新闻资讯、学术论文、非遗资料及行业案例，探索 Agent 在文化研究、文创设计、文旅服务中的应用。</p>
+            <p>基于 Vibe Coding 工作流搭建文化领域智能知识库，汇聚新闻资讯、学术论文、非遗资料及行业案例，并探索 Agent 在文化研究、文创设计、文旅服务中的应用。</p>
             <div class="m-tags">
               <b>Vibe Coding</b><b>知识库</b><b>Agent</b>
+            </div>
+            <div class="m-project-meta">
+              <span><em>ROLE</em>数据运营 / 产品测试</span>
+              <span><em>TOOLS</em>AI Coding / 知识库</span>
+              <span><em>OUTPUT</em>智能引擎原型</span>
             </div>
           </div>
         </div>
